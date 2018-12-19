@@ -5,11 +5,13 @@ body {
   color: white;
   background-color: #2c3e50;
 }
+body {height:5000px;}
 
 header {
-    position: relative;
+    position: fixed;
+    width: 100%;
     z-index: 5;
-    min-height: 40px;
+    height: 76px;
     padding: 0px;
     color: white;
     background-color: #411c03;
@@ -23,6 +25,15 @@ header {
     box-shadow: 0 0 5px 0 #333333;
   }
 
+.fixed {
+    z-index: 5000;
+    color:black;
+}
+
+header.fixed a{
+    color:black;
+}
+
 header h1 {
     color: rgba(255,255,255,0.5);
     text-shadow: 3px 3px 3px #333333;
@@ -34,14 +45,16 @@ header h1 {
 
 .logo img {
     position: absolute;
+    width:80px;
+    height:80px;
     top:-70px;
     left: 50px;
-    border-radius: 50px;
+    border-radius: 40px;
 }
 
 .header {
     background: url(img/header.jpg) repeat;
-    padding: 10px;
+    padding: 20px;
     padding-bottom:0;
 }
 
@@ -70,11 +83,10 @@ header h1 {
 
 .main-nav li:nth-child(4) {
     position: relative;
-    top:-10px;
+    top:-20px;
 }
 
 main {
-    margin-top:-10px;
     min-height: 50px;
     padding: 5px; 
     background-color: #dad8d8;
@@ -90,6 +102,7 @@ main {
     width: 800px;
     height: 400px;
     margin: 0 auto;
+    padding: 70px;
 }
 
 footer {

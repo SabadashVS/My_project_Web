@@ -8,13 +8,13 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
-    <title>Hello, world!</title>
+    <title>HANDICRAFT</title>
   </head>
   <body>
     <header>
-      <nav class="header">
+      <nav class="header" id="main">
           <ul class="main-nav">
-              <li><a href="#">Главная</a></li>
+              <li><a href="#" onclick="slowScroll('#main')">Главная</a></li>
               <li><a href="#">Каталог</a></li>
               <li><a href="#">О нас</a></li>
               <li><h1>HANDICRAFT</h1></li>
@@ -58,12 +58,30 @@
             </div>
           </div>
     </main>
-    
+
     <footer></footer>
     
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
+    <!-- User Scripts-->
+    <script>
+       function slowScroll(id) {
+         $('html','body').animate({
+           scrollTop: $(id).offset().top
+         }, 500);
+       }
+
+      $(document).on("scroll", function () {
+        if($(window).scrollTop() === 0) {
+          $("header").removeClass("fixed");
+        }  else {
+          $("header").attr("class", "fixed");
+        }
+      });
+    </script>
   </body>
 </html>
