@@ -42,12 +42,24 @@ header.fixed a {
 }
 
 header h1 {
-    color: rgba(255,255,255,0.5);
+    font-family: "Charm", "Arial", serif;
+    color: rgba(239, 205, 177, 0.6);
     text-shadow: 3px 3px 3px #333333;
 }
 
 header.fixed .logo {
-    display: none;
+    display:none;
+}
+
+header .logo-small {
+    width:65px;
+    height:40px;
+    position:relative;
+    display:none;
+}
+
+header.fixed .logo-small {
+    display:block;
 }
 
 header.fixed .main-nav h1 {
@@ -76,6 +88,15 @@ header.fixed .main-nav {
     box-shadow: 0 0 5px 0 #333333;
 }
 
+.logo-small img {
+    position: absolute;
+    width:65px;
+    height:40px;
+    top:-20px;
+    left: 50px;
+    box-shadow: 0 0 5px 0 #333333;
+}
+
 .header {
     background: url(img/header.jpg) repeat #919191;
     background-blend-mode: multiply;
@@ -93,7 +114,7 @@ header.fixed .main-nav {
 }
 
 .main-nav a {
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(239, 205, 177, 0.6);
     font-size: 25px;
 }
 
@@ -115,7 +136,7 @@ header.fixed .main-nav {
 main {
     min-height: 50px;
     height:2000px;
-    padding: 5px; 
+    padding-top: 5px; 
     box-shadow: 0 0 5px #cccccc;
     background: url("img/handi.jpg") fixed no-repeat #dad8d8 50% 50%;
     background-blend-mode: multiply;
@@ -125,13 +146,18 @@ main {
 .cool {
    width: 100%;
    height: auto;
-   margin:10px;
+   margin-top:10px;
 }
 .carousel {
-    width: 800px;
-    height: 400px;
+    width: 100%;
+    height: auto;
     margin: 0 auto;
-    padding: 70px;
+}
+
+.catalog {
+    width:100%;
+    background-color: rgba(235, 197, 148, 0.7);
+    padding:50px 70px;
 }
 
 footer {

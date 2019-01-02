@@ -1,14 +1,26 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Изделия из дерева на любой вкус">
     <link href="css/external.css" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
     <title>HANDICRAFT</title>
+
+    <style>
+      @font-face {
+       font-family: Charm; /* Имя шрифта */
+       src: url(css/Fonts/Charm-Regular.ttf); /* Путь к файлу со шрифтом */
+      }
+      P {
+       font-family: Charm;
+      }
+     </style>
+
   </head>
   <body>
     <header>
@@ -25,8 +37,11 @@
           </nav>
 
         <div class="logo">
-            <a href="#"><img src="img/logo.jpg" width="100" height="100" alt="HANDICRAFT"></a>
+            <a href="#"><img src="img/logo.jpg" width="130" height="80" alt="HANDICRAFT"></a>
         </div>
+        <div class="logo-small">
+          <a href="#"><img src="img/logo-small.jpg" width="65" height="40" alt="HANDICRAFT"></a>
+      </div>
     </header>
     <main id="main">
         <div class="cool">
@@ -56,7 +71,19 @@
                 <span class="sr-only">Next</span>
               </a>
             </div>
+        </div>
+        <div class="catalog">
+          <div class="catalog-podstavka">
+              <div class="catalog-item">
+                  <h3>Полено</h3>
+                  <img src="img/Item-1.jpg" width="210" height="210" alt="LOT-1">
+                  <p>Описание</p>
+                  <input type="button" value="Подробнее">
+                  <input type="button" value="Заказать">
+                </div>
           </div>
+
+        </div>
     </main>
 
     <footer></footer>
