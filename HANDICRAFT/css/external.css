@@ -37,7 +37,9 @@ header {
 }
 
 header.fixed a {
+    font-size: 30px;
     color:black;
+    text-shadow: 1px 1px 2px #b8b8b8;
 }
 
 header h1 {
@@ -114,7 +116,8 @@ header.fixed .main-nav {
 
 .main-nav a {
     color: rgba(239, 205, 177, 0.6);
-    font-size: 25px;
+    font-size: 45px;
+    font-family: "Corinthia", "Arial", serif;
 }
 
 .main-nav a:hover {
@@ -139,6 +142,9 @@ main {
     background: url("img/handi.jpg") fixed no-repeat #dad8d8 50% 50%;
     background-blend-mode: multiply;
     background-size: cover;
+    font-family: "Corinthia", "Arial", serif;
+    color: rgba(88, 55, 27, 0.8);
+    text-shadow: 1px 1px 1px #a5a5a5;
 }
 
 .cool {
@@ -158,23 +164,45 @@ main {
     padding:50px 50px;
 }
 
-.catalog > div {
+.catalog-border {
+    border: 2px solid rgba(235, 197, 148, 0.7);
+    border-radius: 20px;
+    margin-top:40px;
+}
+
+.catalog-image {
+    position: relative;
+}
+
+.catalog-image img {
+    position: absolute;
+    top:-60px;
+    left:60px;
+    box-shadow: 0 0 10px 2px #333333;
+}
+
+.catalog .catalog-border> div:not(:first-child) {
     display: flex;
     flex-wrap:wrap;
     justify-content: space-between;
-    border: 2px solid rgba(235, 197, 148, 0.7);
-    border-radius: 20px;
     padding:20px 40px;
 }
 
 .catalog > div h2 {
     width:100%;
     text-align: center;
+    font-size: 70px;
 }
 
 .catalog-item {
     margin:20px;
 }
+
+.catalog-item img {
+    box-shadow: 0 0 10px 3px #333333;
+    border-radius: 20px;
+}
+
 footer {
     width: 100%;
     z-index: 5;
