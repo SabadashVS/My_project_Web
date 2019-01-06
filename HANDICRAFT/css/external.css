@@ -38,7 +38,8 @@ header {
 
 header.fixed a {
     font-size: 30px;
-    color:black;
+    color: rgba(88, 55, 27, 0.9);
+    font-weight: bold;
     text-shadow: 1px 1px 2px #b8b8b8;
 }
 
@@ -195,12 +196,69 @@ main {
 }
 
 .catalog-item {
+    position: relative;
     margin:20px;
+    padding:20px;
+    border: 2px solid rgba(235, 197, 148, 0.7);
+    border-radius: 20px;
 }
 
 .catalog-item img {
     box-shadow: 0 0 10px 3px #333333;
     border-radius: 20px;
+}
+
+.catalog-item h3 {
+    text-align:center;
+    font-size: 40px;
+    font-weight: bold;
+}
+.description {
+    display: flex;
+    width: 315px;
+    height: 180px;
+    align-items: center;
+}
+.catalog-item p {
+    padding: 20px 10px 0px 10px;
+    text-align: justify;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 30px;
+    text-shadow: 1px 1px 1px 1px #444444;
+}
+
+.catalog-item .buttoms {
+    position: absolute;
+    bottom:0px;
+    left:0px;
+}
+
+.catalog-item a {
+    display: block;
+    width:120px;
+    height: 40px;
+    font-size:27px;
+    font-weight: bold;
+    color: rgba(88, 55, 27, 0.8);
+    text-align: center;
+    background: url(img/button.jpg) repeat #333333;
+    border-radius: 8px;
+    box-shadow: 0 0 7px 2px #333333;
+}
+
+.catalog-item a:hover {
+    text-decoration: none;
+    color:rgba(32, 20, 9, 0.8);
+    box-shadow: 0 0 10px 3px #333333;
+}
+
+.catalog-item a:first-child {
+    float: left;
+}
+
+.catalog-item a:last-child {
+    float:right;
 }
 
 footer {
